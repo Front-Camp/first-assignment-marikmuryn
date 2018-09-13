@@ -9,6 +9,11 @@
  */
 const isObject = data => {
   /* your logic here...*/
+  if (typeof data == "object" && !Array.isArray(data) && data != null ) {
+    return true;
+  }
+  return false;
+
 };
 
 export default isObject;
