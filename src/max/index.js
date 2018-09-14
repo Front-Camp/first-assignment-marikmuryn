@@ -8,6 +8,13 @@
 */
 const max = arr => {
   /* your logic here...*/
+  let res = [];
+  arr.forEach(function (item) {
+    if (isFinite(item) ) {
+      res.push(item);
+    }
+  });
+  return Math.max(...res);
 };
 
 export default max;

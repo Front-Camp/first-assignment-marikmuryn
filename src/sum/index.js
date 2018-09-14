@@ -10,7 +10,10 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
-  /* your logic here...*/
+  if (isFinite(a) && isFinite(b) && typeof a !== 'number' && typeof b !== 'number') {
+    return a + b;
+  }
+  throw new Error();
 };
 
 export default sum;

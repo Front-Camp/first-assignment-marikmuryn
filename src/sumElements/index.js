@@ -12,6 +12,16 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+
+
+  return arr.reduce(function (sum, item) {
+    item = parseInt(item);
+    if (isFinite(item)) {
+      return sum += item;
+    }
+    return sum;
+  }, 0)
+
 };
 
 export default sumElements;
